@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-form_url = "YOUR_FORM_URL_HERE"
+form_url = "https://forms.gle/WT68aV5UnPajeoSc8"
 
 driver = webdriver.Chrome()
 driver.get(form_url)
@@ -19,4 +19,5 @@ driver.find_element(By.XPATH, '//input[contains(@aria-label,"verify") or contain
 driver.find_element(By.XPATH, '//span[text()="Submit"]/ancestor::div[@role="button"]').click()
 
 time.sleep(3)
+
 driver.quit()
